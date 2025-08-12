@@ -9,14 +9,14 @@ const Navbar = () => {
   const links = (
     <>
       <li>
-        <NavLink className="mb-2 md:mb-0 font-medium hover:bg-[#2e2e2e] focus:text-primary active:text-primary">
+        <a href="#home" className="mb-2 md:mb-0 font-medium hover:bg-[#2e2e2e] focus:text-primary">
           Home
-        </NavLink>
+        </a>
       </li>
       <li>
-        <NavLink className="mb-2 md:mb-0 font-medium hover:bg-[#2e2e2e] focus:text-primary">
-          Skills
-        </NavLink>
+        <a href="#about-me" className="mb-2 md:mb-0 font-medium hover:bg-[#2e2e2e] focus:text-primary">
+          About
+        </a>
       </li>
     </>
   );
