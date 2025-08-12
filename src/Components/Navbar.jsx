@@ -2,7 +2,6 @@ import React from "react";
 import { IoMenu } from "react-icons/io5";
 import { NavLink } from "react-router";
 import logo from "../../public/ShakilAhmed.png";
-import { FiDownload } from "react-icons/fi";
 import { FaDownload } from "react-icons/fa";
 
 const Navbar = () => {
@@ -19,14 +18,19 @@ const Navbar = () => {
         </a>
       </li>
       <li>
-        <a href="#skills" className="mb-2 md:mb-0 font-medium hover:bg-[#2e2e2e] focus:text-primary">
+        <a href="#skills" to="/" className="mb-2 md:mb-0 font-medium hover:bg-[#2e2e2e] focus:text-primary">
          Skills
+        </a>
+      </li>
+      <li>
+        <a href="#projects" className="mb-2 md:mb-0 font-medium hover:bg-[#2e2e2e] focus:text-primary">
+         Projects
         </a>
       </li>
     </>
   );
   return (
-    <div className="bg-linear-to-t from-[#1b1a1a] to-secondary backdrop-blur-xs shadow-md">
+    <div className="bg-linear-to-t from-[#1b1a1a] to-secondary shadow-md ">
       <div className="navbar  text-white max-w-[1350px] mx-auto py-0">
         <div className="navbar-start">
           <div className="dropdown">

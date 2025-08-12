@@ -37,7 +37,7 @@ const Skills = () => {
   );
 
   return (
-    <div id="skills" className="borders pt-15 sm:p-6 max-w-[1350px] mx-auto text-white">
+    <div id="skills" className="pt-15 max-w-[1350px] mx-auto text-white">
       <h2 className="text-3xl font-bold mb-6 text-center">
         <span className="text-primary">My</span> Skills
       </h2>

@@ -9,7 +9,7 @@ const MainLayout = () => {
             <header className='sticky top-0'>
                 <Navbar/>
             </header>
-            <main className="min-h-[calc(100vh-88px)]">
+            <main className="min-h-[calc(100vh-88px)] bg-secondary">
                 <Outlet></Outlet>
             </main>
             <footer>

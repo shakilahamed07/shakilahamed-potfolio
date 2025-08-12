@@ -5,6 +5,7 @@ import {
 import Home from '../Pages/Home/Home';
 import MainLayout from '../Layouts/MainLayout';
 import ErrorPage from '../Pages/ErrorPage/ErrorPage';
+import ProjectDetails from '../Pages/ProjectsDetails/ProjectDetails';
 
   export const router = createBrowserRouter([
     {
@@ -21,4 +22,10 @@ import ErrorPage from '../Pages/ErrorPage/ErrorPage';
         },
       ]
     },
+    {
+      path:'/projectDetails/:id',
+      loader: () => fetch('/projects.json'),
+      hydrateFallbackElement: <p>Loading..</p>,
+      Component: ProjectDetails
+    }
   ]);

@@ -2,12 +2,12 @@
   {
     "id": 1,
     "projectName": "Portfolio Website",
-    "projectImage": "https://i.ibb.co/kDbNnR2/portfolio-website.png",
+    "projectImage": "https://plus.unsplash.com/premium_photo-1661290256778-3b821d52c514?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cHJvamVjdHxlbnwwfHwwfHx8MA%3D%3D",
     "mainTechStack": ["React.js", "Tailwind CSS", "Framer Motion"],
     "description": "A personal portfolio website showcasing my skills, projects, and contact details with smooth animations and responsive design.",
     "liveLink": "https://myportfolio.com",
-    "githubLink": "https://plus.unsplash.com/premium_photo-1661290256778-3b821d52c514?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cHJvamVjdHxlbnwwfHwwfHx8MA%3D%3D",
-    "features": "Add a blog section, improve accessibility, and include a dark/light mode toggle."
+    "githubLink": "https://plus.unsplash.com/",
+    "features": ["Add offline mode support", "advanced search filters", "and project-based task grouping."]
   },
   {
     "id": 2,
@@ -17,7 +17,7 @@
     "description": "A full-featured e-commerce application with product listings, user authentication, payment gateway integration, and admin dashboard.",
     "liveLink": "https://mystore.com",
     "githubLink": "https://github.com/username/ecommerce-client",
-    "features": "Add product reviews, enhance SEO, and integrate multiple payment options."
+    "features": ["Add offline mode support", "advanced search filters", "and project-based task grouping."]
   },
   {
     "id": 3,
@@ -27,6 +27,6 @@
     "description": "A task management tool allowing users to create, update, and track tasks in real-time with collaborative features.",
     "liveLink": "https://taskapp.com",
     "githubLink": "https://github.com/username/taskapp-client",
-    "features": "Add offline mode support, advanced search filters, and project-based task grouping."
+    "features": ["✅Add offline mode support", "✅advanced search filters", "✅and project-based task grouping."]
   }
 ]

@@ -31,10 +31,10 @@ const Hero = () => {
             <FaDownload />
             Resume
           </button>
-          <button className="btn btn-outline border border-primary text-white btn-primary bg-secondary rounded-xl shadow-sm hover:shadow-md  shadow-primary hover:scale-95 transition-all">
+          <a href="#projects" className="btn btn-outline border border-primary text-white btn-primary bg-secondary rounded-xl shadow-sm hover:shadow-md  shadow-primary hover:scale-95 transition-all">
           <MdOutlineViewComfy />
             Viw Project
-          </button>
+          </a>
         </div>
       </div>
 
