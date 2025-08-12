@@ -18,6 +18,11 @@ const Navbar = () => {
           About
         </a>
       </li>
+      <li>
+        <a href="#skills" className="mb-2 md:mb-0 font-medium hover:bg-[#2e2e2e] focus:text-primary">
+         Skills
+        </a>
+      </li>
     </>
   );
   return (

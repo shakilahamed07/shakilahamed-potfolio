@@ -15,6 +15,8 @@ import ErrorPage from '../Pages/ErrorPage/ErrorPage';
         {
           index: true,
           path:'/',
+          loader: () => fetch('/projects.json'),
+          hydrateFallbackElement: <p>Loading..</p>,
           Component: Home
         },
       ]

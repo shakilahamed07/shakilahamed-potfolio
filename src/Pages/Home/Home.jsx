@@ -1,6 +1,8 @@
 import React from 'react';
 import Hero from './Hero/Hero';
 import AboutMe from './AboutMe/AboutMe';
+import Skills from './Skills/Skills';
+import Projects from './Projects/Projects';
 
 const Home = () => {
     return (
@@ -10,6 +12,12 @@ const Home = () => {
             </section>
             <section>
                 <AboutMe/>
+            </section>
+            <section>
+                <Skills/>
+            </section>
+            <section>
+                <Projects/>
             </section>
         </div>
     );
