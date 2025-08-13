@@ -73,6 +73,7 @@ const ProjectDetails = () => {
               </a>
               <a
                 href={githubLink}
+                target="blank"
                 className="rounded-lg hover:scale-103 bg-primary text-white border-none shadow-2xl shadow-primary transition btn"
               >
                 GitHub <FaGithub size={17} />

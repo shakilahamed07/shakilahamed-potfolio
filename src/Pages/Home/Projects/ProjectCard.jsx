@@ -5,9 +5,9 @@ import { Link } from 'react-router';
 
 const ProjectCard = ({project}) => {
     return (
-        <div className='p-4 rounded-2xl bg-[#131313] group hover:scale-100 transition-all mt-3 shadow-sm shadow-[#202020]'>
+        <div className='p-4 rounded-2xl bg-[#1e1e1eb6] group hover:scale-100 transition-all mt-3 shadow-sm shadow-[#202020]'>
             <div className="">
-                <img className='rounded-xl group-hover:scale-103 transition-all' src={project.projectImage} alt="" />
+                <img className='rounded-xl group-hover:scale-103 transition-all w-full sm:h-45 md:h-55 lg:h-45 xl:h-60' src={project.projectImage} alt="" />
             </div>
             <h1 className='text-xl font-bold my-4'>{project.projectName}</h1>
             <p className='mb-5'>{project.description.slice(0, 90)}..</p>

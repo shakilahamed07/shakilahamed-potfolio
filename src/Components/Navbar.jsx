@@ -27,11 +27,16 @@ const Navbar = () => {
          Projects
         </a>
       </li>
+      <li>
+        <a href="#contactUs" className="mb-2 md:mb-0 font-medium hover:bg-[#2e2e2e] focus:text-primary">
+          Contact Us
+        </a>
+      </li>
     </>
   );
   return (
-    <div className="bg-linear-to-t from-[#1b1a1a] to-secondary shadow-md ">
-      <div className="navbar  text-white max-w-[1350px] mx-auto py-0">
+    <div className="bg-linear-to-t from-[#1b1a1a] to-secondary shadow-2">
+      <div className="navbar  text-white max-w-[1350px] mx-auto py-0 z-50">
         <div className="navbar-start">
           <div className="dropdown">
             <div
@@ -45,11 +50,11 @@ const Navbar = () => {
               tabIndex={0}
               className="menu dropdown-content z-1 -ml-3 w-[200px] min-h-[calc(100vh-0px)] shadow-2xl -mt-12 bg-linear-to-t from-[#1b1a1a] to-secondary text-white"
             >
-              <img className="w-8 ml-3 mb-5 mt-2" src={logo} alt="" />
+              <img className="w-8 ml-3 mb-5 mt-2 " src={logo} alt="" />
               {links}
             </ul>
           </div>
-          <img className="w-8 ml-3" src={logo} alt="" />
+          <img className="w-8 ml-3 hidden lg:block" src={logo} alt="" />
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">{links}</ul>

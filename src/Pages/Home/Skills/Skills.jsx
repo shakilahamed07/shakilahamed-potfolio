@@ -22,9 +22,10 @@ const skillsData = {
 
 const Skills = () => {
   const SkillRow = ({ skills, direction }) => (
-    <div className="my-6">
-      <div className=" rounded-xl p-4">
-        <Marquee direction={direction} gradient={false} speed={50} pauseOnHover={true}>
+    <div className="pt-3 ">
+      <div className=" rounded-xl">
+        <Marquee direction={direction} gradient={false} speed={50} >
+          {/* pauseOnHover={true} */}
           {skills.map((skill, index) => (
             <div key={index} className="flex flex-col items-center mx-6">
               <img src={skill.img} alt={skill.name} className="sm:w-16 w-10 sm:h-16 h-10 object-contain" />
@@ -37,9 +38,9 @@ const Skills = () => {
   );
 
   return (
-    <div id="skills" className="pt-15 max-w-[1350px] mx-auto text-white">
-      <h2 className="text-3xl font-bold mb-6 text-center">
-        <span className="text-primary">My</span> Skills
+    <div id="skills" className="pt-20 max-w-[1350px] mx-auto text-white">
+      <h2 className="text-3xl font-medium mb-6 text-center">
+        My Skills
       </h2>
       <SkillRow skills={skillsData.skills} direction="left" />
     </div>

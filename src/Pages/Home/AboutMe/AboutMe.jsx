@@ -20,13 +20,13 @@ const AboutMe = () => {
 
   return (
     <div
-      className="pt-20 max-w-[1350px] mx-auto text-white py-10 px-5 md:px-10"
+      className="pt-20 max-w-[1350px] mx-auto text-white px-5 md:px-10"
       id="about-me"
       ref={ref}
     >
       {/* Title */}
-      <h2 className="text-3xl font-bold mb-6 text-center lg:text-start">
-        <span className="text-primary">About</span> Me
+      <h2 className="text-3xl font-medium mb-6 text-center lg:text-start">
+        <span className="text-primary ">About</span> Me
       </h2>
 
       <div className="grid lg:grid-cols-2 gap-8 items-center">

@@ -6,7 +6,7 @@ import { Outlet } from 'react-router';
 const MainLayout = () => {
     return (
         <div>
-            <header className='sticky top-0'>
+            <header className='sticky top-0 z-50'>
                 <Navbar/>
             </header>
             <main className="min-h-[calc(100vh-88px)] bg-secondary">

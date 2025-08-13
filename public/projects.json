@@ -1,32 +1,55 @@
 [
   {
     "id": 1,
-    "projectName": "Portfolio Website",
-    "projectImage": "https://plus.unsplash.com/premium_photo-1661290256778-3b821d52c514?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cHJvamVjdHxlbnwwfHwwfHx8MA%3D%3D",
-    "mainTechStack": ["React.js", "Tailwind CSS", "Framer Motion"],
-    "description": "A personal portfolio website showcasing my skills, projects, and contact details with smooth animations and responsive design.",
-    "liveLink": "https://myportfolio.com",
-    "githubLink": "https://plus.unsplash.com/",
-    "features": ["Add offline mode support", "advanced search filters", "and project-based task grouping."]
+    "projectName": "Full-Stack News Sharing Platform",
+    "projectImage": "https://i.ibb.co.com/gcVQ43w/news.png",
+    "mainTechStack": ["React.js", "Node.js", "Express.js", "MongoDB", "JavaScript" ,"Tailwind CSS", "Firebase", "Stripe"],
+    "description": "A role-based news sharing platform with article moderation, subscriptions, trending news, and an intuitive admin dashboard.",
+    "liveLink": "https://daily-headline-360.netlify.app/",
+    "githubLink": "https://github.com/shakilahamed07/Daily_Headline_360-Client-Side",
+    "features": [
+      "📰 Role-Based Access – Admin, Premium, and Normal User roles",
+      "✍️ Article Posting Rules – Limited for normal users, unlimited for premium users",
+      "✅ Article Moderation – Approve, decline (with reason), or keep pending",
+      "📈 Trending News Slider – Showcasing the top 6 articles",
+      "💳 Subscription System – Automatic role update when premium expires",
+      "🔒 Secure Authentication – Login, registration, and JWT-based authorization",
+      "📊 Admin Dashboard – Manage users, articles, and payments",
+      "📱 Fully Responsive Design – Optimized for all devices",
+      "⏳ Real-Time Status Updates – Instant feedback on article approval status"
+    ]    
   },
   {
     "id": 2,
-    "projectName": "E-Commerce Store",
-    "projectImage": "https://plus.unsplash.com/premium_photo-1661290256778-3b821d52c514?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cHJvamVjdHxlbnwwfHwwfHx8MA%3D%3D",
-    "mainTechStack": ["Next.js", "Tailwind CSS", "Stripe API", "Firebase"],
-    "description": "A full-featured e-commerce application with product listings, user authentication, payment gateway integration, and admin dashboard.",
-    "liveLink": "https://mystore.com",
-    "githubLink": "https://github.com/username/ecommerce-client",
-    "features": ["Add offline mode support", "advanced search filters", "and project-based task grouping."]
+    "projectName": "Full-Stack Recipe Management Application",
+    "projectImage": "https://i.ibb.co.com/BHCzQLxr/recepi.png",
+    "mainTechStack": ["React.js", "Node.js", "Express.js", "MongoDB", "JavaScript" ,"Tailwind CSS"],
+    "description": "RecipeBook is a full-stack recipe management platform that allows users to add, update, and like recipes, with a dedicated section for top-liked recipes. It offers filtering options for exploring all recipes, creating an interactive and engaging cooking experience for users.",
+    "liveLink": "https://recipe-book-100.netlify.app/",
+    "githubLink": "https://github.com/shakilahamed07/RecipeBook-Clint_Side",
+    "features": [
+      "📝 Add new recipes",
+      "✏️ Update existing recipes",
+      "❤️ Like recipes to show appreciation",
+      "🏆 View top-liked recipes",
+      "🔍 Filter options for all recipes",
+      "📱 Fully responsive design"
+    ]
   },
   {
     "id": 3,
-    "projectName": "Task Management App",
-    "projectImage": "https://plus.unsplash.com/premium_photo-1661290256778-3b821d52c514?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cHJvamVjdHxlbnwwfHwwfHx8MA%3D%3D",
-    "mainTechStack": ["React.js", "Redux", "Node.js", "Express.js", "MongoDB"],
-    "description": "A task management tool allowing users to create, update, and track tasks in real-time with collaborative features.",
-    "liveLink": "https://taskapp.com",
-    "githubLink": "https://github.com/username/taskapp-client",
-    "features": ["✅Add offline mode support", "✅advanced search filters", "✅and project-based task grouping."]
+    "projectName": "Full-Stack Book Library Application",
+    "projectImage": "https://i.ibb.co.com/gM828QbD/book-Laibry.png",
+    "mainTechStack": ["React.js", "Node.js", "Express.js", "MongoDB", "JavaScript" ,"Tailwind CSS", "Firebase"],
+    "description": "PageFlow is a full-stack library management platform where users can add, update, borrow, and return books with ease. The system provides a smooth and responsive interface, secure authentication, and efficient book tracking for a seamless user experience.",
+    "liveLink": "https://page-flow.netlify.app/",
+    "githubLink": "https://github.com/shakilahamed07/PageFlow-Client-Side",
+    "features": [
+      "📚 Add new books to the library",
+      "✏️ Update existing book details",
+      "📖 Borrow book functionality",
+      "🔄 Return borrowed books",
+      "📱 Fully responsive design"
+    ]
   }
 ]

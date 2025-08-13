@@ -35,8 +35,8 @@ const ContactUs = () => {
   };
 
   return (
-    <div className="rounded-xl pt-15 mx-5">
-      <h2 className="text-3xl font-medium text-center">Get in Touch</h2>
+    <div id="contactUs" className="rounded-xl pt-20 mx-5">
+      <h2 className="text-3xl font-medium text-center">Contact Us</h2>
       <ToastContainer position="bottom-right" />
       <div className="md:flex max-w-6xl mx-auto overflow-hidden my-10 space-y-8 md:space-y-8 justify-center gap-5">
         {/* Left side - Image & Text */}
