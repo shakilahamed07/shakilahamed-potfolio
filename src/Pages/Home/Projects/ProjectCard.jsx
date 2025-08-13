@@ -5,7 +5,7 @@ import { Link } from 'react-router';
 
 const ProjectCard = ({project}) => {
     return (
-        <div className='p-4 rounded-2xl bg-[#131313] group hover:scale-100 transition-all mt-3 shadow-2xl shadow-[#202020]'>
+        <div className='p-4 rounded-2xl bg-[#131313] group hover:scale-100 transition-all mt-3 shadow-sm shadow-[#202020]'>
             <div className="">
                 <img className='rounded-xl group-hover:scale-103 transition-all' src={project.projectImage} alt="" />
             </div>

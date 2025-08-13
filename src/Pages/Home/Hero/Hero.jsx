@@ -9,11 +9,11 @@ const Hero = () => {
     <div id="home" className="md:flex space-y-10 md:space-y-0 gap-5 justify-between items-center max-w-[1350px] mx-auto min-h-[calc(100vh-73px)] sm:py-20 py-15 sm:px-10 px-5 text-white">
       {/* text content */}
       <div className="lg:-mt-8">
-        <h1 className="text-primary md:text-4xl text-[27px] font-extrabold md:leading-12">
+        <h1 className="text-primary md:text-3xl text-[26px] font-extrabold md:leading-11">
           Hello👋 <br /> I'm <span className="text-white">Shakil Ahmed</span>, <br />{" "}
-          MERN Stack Developer
+          <span className="bg-linear-to-r from-primary to-[#81c41c] bg-clip-text text-transparent md:text-4xl text-[28px]">MERN Stack Developer</span>
         </h1>
-        <p className="max-w-[600px] mb-5 mt-6">
+        <p className="max-w-[600px] sm:text-md text-sm mb-5 sm:mt-4 mt-2">
           I am crafting modern, high-performance web applications from frontend
           to backend, delivering seamless user experiences and scalable backend
           solutions.

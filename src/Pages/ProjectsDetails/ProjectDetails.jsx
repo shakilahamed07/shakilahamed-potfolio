@@ -109,7 +109,7 @@ const ProjectDetails = () => {
             <FaRegStar size={20} className="text-yellow-300" />
             Kay Features
           </h3>
-          <div className="pl-4 mt-3">
+          <div className="pl-4 mt-3 space-y-3">
             {features.map((feature, i) => {
               return (
                 <p key={i} className="flex items-center gap-1">
