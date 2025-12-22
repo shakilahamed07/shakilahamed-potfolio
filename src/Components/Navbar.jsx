@@ -5,6 +5,7 @@ import logo from "../../public/ShakilAhmed.png";
 import { FaDownload } from "react-icons/fa";
 
 const Navbar = () => {
+  
   const links = (
     <>
       <li>
@@ -60,7 +61,7 @@ const Navbar = () => {
           <ul className="menu menu-horizontal px-1">{links}</ul>
         </div>
         <div className="navbar-end">
-          <a className="btn btn-primary bg-primary px-3 font-bold text-white border-none rounded-xl hover:bg-[#44a158] hover:scale-95 transition-all">
+          <a href="https://drive.google.com/file/d/1HvP1BCNyrdePI0YLwCYFweqEsE3iKbUg/view?usp=drive_link" target="blank" className="btn btn-primary bg-primary px-3 font-bold text-white border-none rounded-xl hover:bg-[#44a158] hover:scale-95 transition-all">
             <FaDownload />
             Resume
           </a>

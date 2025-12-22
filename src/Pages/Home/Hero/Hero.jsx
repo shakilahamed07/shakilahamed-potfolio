@@ -3,15 +3,23 @@ import { FaDownload, FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
 import { MdOutlineViewComfy } from "react-icons/md";
 import myImg from '../../../assets/shakil.png'
 import { AiFillTwitterCircle } from "react-icons/ai";
+import { useTypewriter } from "react-simple-typewriter";
 
 const Hero = () => {
+
+  const [text] = useTypewriter({
+    words: ['MERN Stack Developer', 'Font-End Developer', 'Full Stack Developer'],
+    loop: 0,
+  })
+
+
   return (
     <div id="home" className="md:flex space-y-10 md:space-y-0 gap-5 justify-between items-center max-w-[1350px] mx-auto min-h-[calc(100vh-73px)] sm:py-20 py-15 sm:px-10 px-5 text-white">
       {/* text content */}
-      <div className="lg:-mt-8">
+      <div className="lg:-mt-8 ">
         <h1 className="text-primary md:text-3xl text-[26px] font-extrabold md:leading-11">
           Hello👋 <br /> I'm <span className="text-white">Shakil Ahmed</span>, <br />{" "}
-          <span className="bg-linear-to-r from-primary to-[#81c41c] bg-clip-text text-transparent md:text-4xl text-[28px]">MERN Stack Developer</span>
+          <span className="bg-linear-to-r from-primary to-[#81c41c] bg-clip-text text-transparent md:text-4xl text-[28px]">{text}<span className="text-2xl">_</span> </span>
         </h1>
         <p className="max-w-[600px] sm:text-md text-sm mb-5 sm:mt-4 mt-2">
           I am crafting modern, high-performance web applications from frontend
@@ -21,16 +29,16 @@ const Hero = () => {
         <div className="flex gap-5 items-center mb-8 mt-6">
             <hr  className="text-white w-20"/>
             <a href="https://github.com/shakilahamed07" target="blank"><FaGithub size={20} className="hover:scale-150 transition-all"/></a>
-            <a href="https://www.linkedin.com/in/shakil-ahmed-745566379/" target="blank" ><FaLinkedin size={20} className="hover:scale-150 transition-all"/></a>
-            <a href="https://www.facebook.com/AdnanShakilAyan/" target="blank"><FaFacebook size={20} className="hover:scale-150 transition-all"/></a>
+            <a href="https://www.linkedin.com/in/shakilahmed-me/" target="blank" ><FaLinkedin size={20} className="hover:scale-150 transition-all"/></a>
+            <a href="https://www.facebook.com/shakilahmed.io/" target="blank"><FaFacebook size={20} className="hover:scale-150 transition-all"/></a>
             <a href="https://x.com/shakilahamed07" target="blank"><AiFillTwitterCircle size={22} className="hover:scale-150 transition-all"/></a>
             <hr  className="text-white w-20"/>
         </div>
         <div className="space-x-5">
-        <button className="btn btn-primary bg-primary px-5 font-bold text-white border-none rounded-xl shadow-2xl shadow-primary hover:scale-95 transition-all">
+        <a href="https://drive.google.com/file/d/1HvP1BCNyrdePI0YLwCYFweqEsE3iKbUg/view?usp=drive_link" target="blank" className="btn btn-primary bg-primary px-5 font-bold text-white border-none rounded-xl shadow-2xl shadow-primary hover:scale-95 transition-all">
             <FaDownload />
             Resume
-          </button>
+          </a>
           <a href="#projects" className="btn btn-outline border border-primary text-white btn-primary bg-secondary rounded-xl shadow-sm hover:shadow-md  shadow-primary hover:scale-95 transition-all">
           <MdOutlineViewComfy />
             Viw Project

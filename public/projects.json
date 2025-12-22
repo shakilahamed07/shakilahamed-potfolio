@@ -21,7 +21,7 @@
   },
   {
     "id": 2,
-    "projectName": "Full-Stack Recipe Management Application",
+    "projectName": "Recipe Management Application",
     "projectImage": "https://i.ibb.co.com/BHCzQLxr/recepi.png",
     "mainTechStack": ["React.js", "Node.js", "Express.js", "MongoDB", "JavaScript" ,"Tailwind CSS"],
     "description": "RecipeBook is a full-stack recipe management platform that allows users to add, update, and like recipes, with a dedicated section for top-liked recipes. It offers filtering options for exploring all recipes, creating an interactive and engaging cooking experience for users.",

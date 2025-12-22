@@ -41,9 +41,11 @@ const ContactUs = () => {
       <div className="md:flex max-w-6xl mx-auto overflow-hidden my-10 space-y-8 md:space-y-8 justify-center gap-5">
         {/* Left side - Image & Text */}
         <div className="md:w-1/2 max-w-md mx-auto">
-          <h1 className="text-3xl font-medium">
+          <h1 className="sm:text-2xl text-xl font-medium">
             Let's talk about your <br />{" "}
-            <span className="bg-linear-to-r from-primary to-[#81c41cd0] bg-clip-text text-transparent font-semibold">next idea</span>
+            <span className="bg-linear-to-r from-primary to-[#81c41cd0] bg-clip-text text-transparent font-semibold">
+              next idea
+            </span>
           </h1>
           <p className="mb-10 mt-5 text-[#c9c9c9d8] max-w-md">
             Whether you have a question, project idea, or want to contact - I'm
@@ -51,44 +53,56 @@ const ContactUs = () => {
           </p>
           <div className="space-y-5">
             <div className="flex items-center gap-4">
-                <div className="bg-primary p-2 rounded-full w-fit">
-                    <FaLocationDot size={20} />
-                </div>
-                <div className="">
+              <div className="bg-primary p-2 rounded-full w-fit">
+                <FaLocationDot size={20} />
+              </div>
+              <div className="">
                 <p className="text-sm text-[#c9c9c9d8]">Location</p>
                 <h2 className="font-medium">Dhaka, Bangladesh</h2>
-                </div>
+              </div>
             </div>
             <div className="flex items-center gap-4">
-                <div className="bg-primary p-2 rounded-full w-fit">
-                    <FaPhone size={20} />
-                </div>
-                <div className="">
-                <p className="text-sm text-[#c9c9c9d8]">Phone / WhatsApp</p>
-                <h2 className="font-medium">+880 1772 551 376</h2>
-                </div>
+              <div className="bg-primary p-2 rounded-full w-fit">
+                <FaPhone size={20} />
+              </div>
+              <div className="">
+                <h2 className="text-sm text-[#c9c9c9d8]">Phone / WhatsApp</h2>
+                <a
+                  href="https://wa.me/8801772551376"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-medium"
+                >
+                  +880 1772 551 376
+                </a>
+              </div>
             </div>
             <div className="flex items-center gap-4">
-                <div className="bg-primary p-2 rounded-full w-fit">
-                    <MdMarkEmailUnread size={20} />
-                </div>
-                <div className="">
+              <div className="bg-primary p-2 rounded-full w-fit">
+                <MdMarkEmailUnread size={20} />
+              </div>
+              <div className="">
                 <p className="text-sm text-[#c9c9c9d8]">Email</p>
-                <h2 className="font-medium">shakil.ahmed.dev1@gmail.com</h2>
-                </div>
+                <a
+                  href="mailto:shakilahmed.codes@gmail.com"
+                  className="font-medium"
+                >
+                  shakilahmed.codes@gmail.com
+                </a>
+              </div>
             </div>
           </div>
         </div>
 
         {/* Right side - Form */}
-        <div className="md:w-1/2 max-w-md mx-auto sm:p-8 p-4 bg-[#342e2e11] rounded-2xl ">
+        <div className="md:w-1/2 max-w-md mx-auto sm:p-8 p-4 bg-[#33333368] rounded-2xl ">
           <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
-            <div className="flex gap-4">
-              <div className="w-1/2">
+            <div className="sm:flex gap-4 space-y-4 sm:space-y-0">
+              <div className="sm:w-1/2">
                 <input
                   type="text"
                   placeholder="Enter your name"
-                  className="w-full p-3 bg-[#232121] text-white rounded-2xl focus:border-primary border border-secondary outline-0"
+                  className="w-full p-3 bg-secondary text-white rounded-2xl focus:border-primary border border-secondary outline-0"
                   {...register("name", { required: "Name is required" })}
                 />
                 {errors.name && (
@@ -98,11 +112,11 @@ const ContactUs = () => {
                 )}
               </div>
 
-              <div className="w-1/2">
+              <div className="sm:w-1/2">
                 <input
                   type="text"
                   placeholder="Enter your number"
-                  className="w-full p-3 bg-[#232121] text-white rounded-2xl focus:border-primary border border-secondary outline-0"
+                  className="w-full p-3 bg-secondary text-white rounded-2xl focus:border-primary border border-secondary outline-0"
                   {...register("phone", {
                     required: "Phone number is required",
                   })}
@@ -119,7 +133,7 @@ const ContactUs = () => {
               <input
                 type="email"
                 placeholder="Enter your email"
-                className="w-full p-3 bg-[#232121] text-white rounded-2xl focus:border-primary border border-secondary outline-0"
+                className="w-full p-3 bg-secondary text-white rounded-2xl focus:border-primary border border-secondary outline-0"
                 {...register("email", {
                   required: "Email is required",
                   pattern: {
@@ -139,7 +153,7 @@ const ContactUs = () => {
               <textarea
                 rows="4"
                 placeholder="Message.."
-                className="w-full p-3 bg-[#232121] text-white rounded-2xl focus:border-primary border border-secondary outline-0"
+                className="w-full p-3 bg-secondary text-white rounded-2xl focus:border-primary border border-secondary outline-0"
                 {...register("message", { required: "Message is required" })}
               ></textarea>
               {errors.message && (
@@ -151,7 +165,7 @@ const ContactUs = () => {
 
             <button
               type="submit"
-              className="w-full bg-primary text-white py-3 rounded-xl transition"
+              className="w-full bg-primary text-white py-3 rounded-xl transition font-medium"
             >
               {loader ? "Sending.." : "SEND MESSAGE"}
             </button>
