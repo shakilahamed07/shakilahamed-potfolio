@@ -11,7 +11,7 @@ const Projects = () => {
       id="projects"
       className="pt-20 px-4 max-w-[1350px] mx-auto text-white"
     >
-      <h2 className="text-3xl font-medium mb-6 text-center">
+      <h2 data-aos="zoom-out" className="text-3xl font-medium mb-6 text-center">
         My Recent Projects
       </h2>
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">

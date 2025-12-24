@@ -37,7 +37,7 @@ const ProjectDetails = () => {
       </Link>
       <div className="text-white md:flex gap-10 min-h-[calc(100vh-120px)] mt-10 space-y-8 lg:space-y-0">
         {/* left side */}
-        <div className="flex-1">
+        <div data-aos="fade-right" className="flex-1">
           <h1 className="sm:text-4xl text-3xl font-bold ">{projectName}</h1>
           <div className="bg-primary h-1 rounded-4xl shadow-2xl shadow-primary w-30 my-5"></div>
           <p className="max-w-[500px]">{description}</p>
@@ -102,7 +102,7 @@ const ProjectDetails = () => {
         </div>
 
         {/* right side */}
-        <div className="flex-1">
+        <div data-aos="fade-left" className="flex-1">
           <div className="mb-8">
             <img className="rounded-xl" src={projectImage} alt="" />
           </div>

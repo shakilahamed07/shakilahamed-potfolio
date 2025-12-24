@@ -4,8 +4,8 @@ import { FaFacebook, FaGithub, FaLinkedin } from 'react-icons/fa';
 
 const Footer = () => {
     return (
-        <div className='bg-neutral'>
-            <footer className="md:flex justify-center items-center gap-10 max-w-[1350px] mx-auto bg-neutral text-white p-8 space-y-5 md:space-y-0">
+        <div className='bg-[#222222]'>
+            <footer className="md:flex justify-center items-center gap-10 max-w-[1350px] mx-auto bg-[#222222] text-gray-200 p-8 space-y-5 md:space-y-0">
                 <aside className="text-center">
 
                     <p>Copyright © {new Date().getFullYear()} - All right reserved</p>

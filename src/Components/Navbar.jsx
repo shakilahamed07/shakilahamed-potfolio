@@ -36,7 +36,7 @@ const Navbar = () => {
     </>
   );
   return (
-    <div className="bg-linear-to-t from-[#1b1a1a] to-secondary shadow-2">
+    <div data-aos="fade-down" className="bg-linear-to-t from-[#1b1a1a] to-secondary shadow-2">
       <div className="navbar  text-white max-w-[1350px] mx-auto py-0 z-50">
         <div className="navbar-start">
           <div className="dropdown">

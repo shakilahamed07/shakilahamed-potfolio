@@ -38,11 +38,11 @@ const Skills = () => {
   );
 
   return (
-    <div id="skills" className="pt-20 max-w-[1350px] mx-auto text-white">
+    <div data-aos="zoom-out" id="skills" className="pt-20 max-w-[1350px] mx-auto text-white">
       <h2 className="text-3xl font-medium mb-6 text-center">
         My Skills
       </h2>
-      <SkillRow skills={skillsData.skills} direction="left" />
+      <SkillRow  skills={skillsData.skills} direction="left" />
     </div>
   );
 };
