@@ -13,7 +13,7 @@ const ProjectCard = ({project}) => {
             <p className='mb-5'>{project.description.slice(0, 90)}..</p>
             <div className="flex justify-between">
                 <a href={project.liveLink} target='blank' className='hover:scale-105 transition-all py-2 flex items-center gap-2 text-blue-400 cursor-pointer focus:text-blue-600'>Live Demo <FaArrowUpRightFromSquare/></a>
-                <Link to={`/projectDetails/${project.id}`} className='bg-primary px-3 rounded-lg flex items-center gap-2 hover:scale-97 transition-all'>Details <FaArrowRight /></Link>
+                <Link  to={`/projectDetails/${project.id}`} onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })} className='bg-primary px-3 rounded-lg flex items-center gap-2 hover:scale-97 transition-all'>Details <FaArrowRight /></Link>
             </div>
         </div>
     );
