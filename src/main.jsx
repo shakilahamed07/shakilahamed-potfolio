@@ -6,17 +6,8 @@ import {
 } from "react-router";
 import { router } from './Router/Router';
 
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-
-AOS.init({
-  // Global settings:
-  duration: 800,
-
-});
-
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <RouterProvider router={router}></RouterProvider>
-  </StrictMode>,
+  </StrictMode>
 )

@@ -38,7 +38,7 @@ const Skills = () => {
   );
 
   return (
-    <div data-aos="zoom-out" id="skills" className="pt-20 max-w-[1350px] mx-auto text-white">
+    <div  id="skills" className="pt-20 max-w-[1350px] mx-auto text-white">
       <h2 className="text-3xl font-medium mb-6 text-center">
         My Skills
       </h2>

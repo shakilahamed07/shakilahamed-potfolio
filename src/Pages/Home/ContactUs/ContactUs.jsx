@@ -36,11 +36,11 @@ const ContactUs = () => {
 
   return (
     <div id="contactUs" className="rounded-xl pt-20 mx-5">
-      <h2 data-aos="zoom-out" className="text-3xl font-medium text-center">Contact Us</h2>
+      <h2  className="text-3xl font-medium text-center">Contact Us</h2>
       <ToastContainer position="bottom-right" />
       <div className="md:flex max-w-6xl mx-auto overflow-hidden my-10 space-y-8 md:space-y-8 justify-center gap-5">
         {/* Left side - Icon & Text */}
-        <div data-aos="fade-right" className="md:w-1/2 max-w-md mx-auto">
+        <div  className="md:w-1/2 max-w-md mx-auto">
           <h1 className="sm:text-2xl text-xl font-medium">
             Let's talk about your <br />{" "}
             <span className="bg-linear-to-r from-primary to-[#81c41cd0] bg-clip-text text-transparent font-semibold">
@@ -95,7 +95,7 @@ const ContactUs = () => {
         </div>
 
         {/* Right side - Form */}
-        <div data-aos="fade-left" className="md:w-1/2 max-w-md mx-auto sm:p-8 p-4 bg-[#33333368] rounded-2xl ">
+        <div  className="md:w-1/2 max-w-md mx-auto sm:p-8 p-4 bg-[#33333368] rounded-2xl ">
           <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
             <div className="sm:flex gap-4 space-y-4 sm:space-y-0">
               <div className="sm:w-1/2">
