@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { IoMenu } from "react-icons/io5";
 import { NavLink } from "react-router";
 import logo from "../../public/ShakilAhmed.png";
 import { FaDownload } from "react-icons/fa";
+import { ImCross } from "react-icons/im";
 
 const Navbar = () => {
+
+  const [value, setValue] = useState(true)
   
   const links = (
     <>
@@ -35,23 +38,31 @@ const Navbar = () => {
       </li>
     </>
   );
+
   return (
     <div  className="bg-linear-to-t from-[#1b1a1a] to-secondary shadow-2">
       <div className="navbar  text-white max-w-[1350px] mx-auto py-0 z-50">
         <div className="navbar-start">
           <div className="dropdown">
-            <div
+            <div onClick={()=>{setValue(true)}}>
+              <div
               tabIndex={0}
               role="button"
               className="lg:hidden  text-white"
             >
               <IoMenu size={33} />
             </div>
+            </div>
             <ul
               tabIndex={0}
-              className="menu dropdown-content z-1 -ml-3 w-[200px] min-h-[calc(100vh-0px)] shadow-2xl -mt-12 bg-linear-to-t from-[#1b1a1a] to-secondary text-white"
+              className={`${value ? 'block' : 'hidden'} menu dropdown-content z-1 -ml-3 w-[200px] min-h-[calc(100vh-0px)] shadow-2xl -mt-12 bg-linear-to-t from-[#1b1a1a] to-secondary text-white`}
             >
-              <img className="w-8 ml-3 mb-5 mt-2 " src={logo} alt="" />
+              <div className="flex items-center justify-between">
+                <img className="w-8 ml-3 mb-5 mt-2 " src={logo} alt="" />
+                <span onClick={()=>{setValue(false)}} className="mb-2 mr-5">
+                  <ImCross className="hover:scale-110 transition-all"/>
+                </span>
+              </div>
               {links}
             </ul>
           </div>

@@ -48,7 +48,7 @@ const Hero = () => {
 
       {/* img */}
       <div className="">
-        <div className="max-w-[400px] mx-auto bg-linear-to-r from-primary to-[#15c01ec7] rounded-full shadow-2xl shadow-primary">
+        <div className="max-w-[400px] mx-auto bg-primary rounded-full shadow-2xl shadow-primary">
             <img className="rounded-full pt-10" src={myImg} alt="" />
         </div>
       </div>
