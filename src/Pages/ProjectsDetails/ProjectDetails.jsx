@@ -10,11 +10,24 @@ import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 import { GoDotFill } from "react-icons/go";
 import { GrTechnology } from "react-icons/gr";
 import { IoIosCode } from "react-icons/io";
-import { Link, useLoaderData, useParams } from "react-router";
+import { Link, useLoaderData, useNavigate, useParams } from "react-router";
 
 const ProjectDetails = () => {
   const project = useLoaderData();
   const { id } = useParams();
+  const navigate = useNavigate();
+
+  //* function for back navigation
+  const handleClick = () => {
+    navigate("/");
+
+    setTimeout(() => {
+      const projectsSection = document.getElementById("projects");
+      if (projectsSection) {
+        projectsSection.scrollIntoView({ behavior: "smooth" });
+      }
+    }, 100);
+  };
 
   const {
     features,
@@ -28,16 +41,16 @@ const ProjectDetails = () => {
 
   return (
     <div className="text-white py-10 px-5 max-w-[1350px] mx-auto">
-      <Link
-        to={`/`}
+      <button
+        onClick={handleClick}
         className="bg-[#383838cb] shadow-2xl shadow-primary px-3 py-2 pr-4 rounded-lg flex items-center gap-2 hover:scale-97 transition-all w-fit "
       >
         <FaArrowLeft />
         Home
-      </Link>
+      </button>
       <div className="text-white md:flex gap-10 min-h-[calc(100vh-120px)] mt-10 space-y-8 lg:space-y-0">
         {/* left side */}
-        <div  className="flex-1">
+        <div className="flex-1">
           <h1 className="sm:text-4xl text-3xl font-bold ">{projectName}</h1>
           <div className="bg-primary h-1 rounded-4xl shadow-2xl shadow-primary w-30 my-5"></div>
           <p className="max-w-[500px]">{description}</p>
@@ -57,7 +70,9 @@ const ProjectDetails = () => {
                 <FaLayerGroup className="text-primary text-xl" />
                 <div>
                   <p className="text-xl font-bold">{features.length}</p>
-                  <span className="text-xs md:text-sm text-gray-400">Key Features</span>
+                  <span className="text-xs md:text-sm text-gray-400">
+                    Key Features
+                  </span>
                 </div>
               </div>
             </div>
@@ -102,7 +117,7 @@ const ProjectDetails = () => {
         </div>
 
         {/* right side */}
-        <div  className="flex-1">
+        <div className="flex-1">
           <div className="mb-8">
             <img className="rounded-xl" src={projectImage} alt="" />
           </div>
