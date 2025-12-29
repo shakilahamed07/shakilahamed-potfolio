@@ -12,8 +12,9 @@ const Projects = () => {
       className="pt-20 px-4 max-w-[1350px] mx-auto text-white"
     >
       <h2 data-aos="zoom-out" className="text-3xl font-medium mb-6 text-center">
-        Recent Projects
+        Featured Projects
       </h2>
+      <p className="mb-6 max-w-105 mx-auto text-center text-gray-300 text-sm sm:text-[16px]">A showcase of my recent work, featuring modern web applications built with cutting- edge technologies</p>
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
         {
             projects.map(project=> {
