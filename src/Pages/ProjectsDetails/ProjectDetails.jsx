@@ -26,7 +26,7 @@ const ProjectDetails = () => {
       if (projectsSection) {
         projectsSection.scrollIntoView({ behavior: "smooth" });
       }
-    }, 100);
+    }, 150);
   };
 
   const {
