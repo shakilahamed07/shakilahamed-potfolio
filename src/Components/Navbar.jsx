@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { IoMenu } from "react-icons/io5";
 import { NavLink } from "react-router";
 import logo from "../../public/ShakilAhmed.png";
@@ -12,7 +12,8 @@ const Navbar = () => {
     <>
       <li>
         <a
-          href="#home"
+          
+          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" }, setValue(false))}
           className="mb-2 md:mb-0 font-medium hover:bg-[#2e2e2e] focus:text-primary"
         >
           Home
