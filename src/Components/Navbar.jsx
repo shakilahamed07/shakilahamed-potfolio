@@ -83,7 +83,7 @@ const Navbar = () => {
               <div className="flex items-center justify-between pt-6 pb-5 bg-[#11111152]">
                 <div className="pl-3">
                   <a
-                    href="https://drive.google.com/file/d/1HvP1BCNyrdePI0YLwCYFweqEsE3iKbUg/view?usp=drive_link"
+                    href="https://drive.google.com/file/d/1u3WYPeEfzF_OvAPgwLqvTfoD-M1nJReX/view?usp=drive_link"
                     target="blank"
                     className="flex items-center justify-between gap-1 btn-primary bg-primary font-medium px-1.5 py-1.5 text-xs text-white border-none rounded-xl hover:bg-[#44a158] hover:scale-95 transition-all"
                   >
