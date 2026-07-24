@@ -1,5 +1,6 @@
 import React from "react";
 import Marquee from "react-fast-marquee";
+import { easeInOut, motion } from "motion/react";
 
 const skillsData = {
   skills: [
@@ -39,9 +40,10 @@ const Skills = () => {
 
   return (
     <div  id="skills" className="pt-20 max-w-[1350px] mx-auto text-white">
-      <h2 className="text-3xl font-medium mb-6 text-center">
+      <motion.h2 initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1, transition: { duration: 0.8, delay: 0.3 } }} className="text-3xl font-medium mb-6 text-center">
         My Skills
-      </h2>
+      </motion.h2>
       <SkillRow  skills={skillsData.skills} direction="left" />
     </div>
   );
