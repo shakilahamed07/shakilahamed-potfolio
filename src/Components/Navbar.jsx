@@ -4,6 +4,7 @@ import { NavLink } from "react-router";
 import logo from "../../public/ShakilAhmed.png";
 import { FaDownload } from "react-icons/fa";
 import { ImCross } from "react-icons/im";
+import { motion } from "motion/react";
 
 const Navbar = () => {
   const [value, setValue] = useState(true);
@@ -57,7 +58,8 @@ const Navbar = () => {
 
   return (
     <div className="bg-linear-to-t from-[#1b1a1a] to-secondary shadow-2">
-      <div className="navbar flex justify-between text-white max-w-[1350px] mx-auto py-0 z-50">
+      <motion.div initial={{ opacity: 0, y: -100 }}
+          animate={{ opacity: 1, y: 0, transition: { duration: 0.8 } }} className="navbar flex justify-between text-white max-w-[1350px] mx-auto py-0 z-50">
         <img className="w-8 ml-1 mb-5 mt-5 lg:hidden" src={logo} alt="" />
         <div className="">
           <div className="dropdown">
@@ -120,7 +122,7 @@ const Navbar = () => {
             Resume
           </a>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };
