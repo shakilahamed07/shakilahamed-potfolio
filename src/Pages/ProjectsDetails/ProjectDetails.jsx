@@ -11,6 +11,7 @@ import { GoDotFill } from "react-icons/go";
 import { GrTechnology } from "react-icons/gr";
 import { IoIosCode } from "react-icons/io";
 import { Link, useLoaderData, useNavigate, useParams } from "react-router";
+import { motion } from "motion/react";
 
 const ProjectDetails = () => {
   const project = useLoaderData();
@@ -50,7 +51,8 @@ const ProjectDetails = () => {
       </button>
       <div className="text-white md:flex gap-10 min-h-[calc(100vh-120px)] mt-10 space-y-8 lg:space-y-0">
         {/* left side */}
-        <div className="flex-1">
+        <motion.div initial={{ opacity: 0, x: -300 }}
+        animate={{ opacity: 1, x: 0, transition: { duration: 0.6, delay: 0.3 } }} className="flex-1">
           <h1 className="sm:text-4xl text-3xl font-bold ">{projectName}</h1>
           <div className="bg-primary h-1 rounded-4xl shadow-2xl shadow-primary w-30 my-5"></div>
           <p className="max-w-[500px]">{description}</p>
@@ -114,16 +116,17 @@ const ProjectDetails = () => {
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
 
         {/* right side */}
-        <div className="flex-1">
+        <motion.div initial={{ opacity: 0, x: 300 }}
+        animate={{ opacity: 1, x: 0, transition: { duration: 0.6, delay: 0.3 } }}  className="flex-1">
           <div className="mb-8">
             <img className="rounded-xl" src={projectImage} alt="" />
           </div>
           <h3 className="text-2xl font-medium my-2 flex items-center gap-2">
             <FaRegStar size={20} className="text-yellow-300" />
-            Kay Features
+            Key Features
           </h3>
           <div className="pl-4 mt-3 space-y-3">
             {features.map((feature, i) => {
@@ -136,7 +139,7 @@ const ProjectDetails = () => {
               );
             })}
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

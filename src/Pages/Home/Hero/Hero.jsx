@@ -20,8 +20,9 @@ const Hero = () => {
       {/* text content */}
       <div className="lg:-mt-8 ">
         <motion.h1
-          initial={{ opacity: 0, x: -500 }}
-          animate={{ opacity: 1, x: 0, transition: { duration: 0.6 } }}
+        viewport={{ once: true }}
+          initial={{ opacity: 0, x: -300 }}
+          whileInView={{ opacity: 1, x: 0, transition: { duration: 0.6 } }}
           className="text-primary md:text-3xl text-[26px] font-extrabold md:leading-11"
         >
           Hello👋 <br /> I'm <span className="text-white">Shakil Ahmed</span>,{" "}
@@ -32,8 +33,9 @@ const Hero = () => {
           </span>
         </motion.h1>
         <motion.p
-          initial={{ opacity: 0, x: -500 }}
-          animate={{ opacity: 1, x: 0, transition: { duration: 0.8 } }}
+          viewport={{ once: true }}     
+          initial={{ opacity: 0, x: -300 }}
+          whileInView={{ opacity: 1, x: 0, transition: { duration: 0.8 } }}
           className="max-w-[600px] sm:text-md text-sm mb-5 sm:mt-4 mt-2"
         >
           I am crafting modern, high-performance web applications from frontend
@@ -41,13 +43,14 @@ const Hero = () => {
           solutions.
         </motion.p>
         <motion.div
-          initial={{ opacity: 0, x: -500 }}
-          animate={{ opacity: 1, x: 0, transition: { duration: 0.9 } }}
+          viewport={{ once: true }}
+          initial={{ opacity: 0, x: -300 }}
+          whileInView={{ opacity: 1, x: 0, transition: { duration: 0.9 } }}
           className="flex gap-5 items-center mb-8 mt-6"
         >
-          <motion.hr initial={{ opacity: 0, x: -100 }}
-          animate={{ opacity: 1, x: 0, transition: { duration: 0.6, delay: 1 } }} className="text-white w-20" />
-          <motion.a animate={{ scale: [1, 1.5, 1] }}
+          <motion.hr viewport={{ once: true }} initial={{ opacity: 0, x: -80 }}
+          whileInView={{ opacity: 1, x: 0, transition: { duration: 0.6, delay: 0 } }} className="text-white w-20" />
+          <motion.a viewport={{ once: true }} whileInView={{ scale: [1, 1.5, 1] }}
             transition={{
               duration: 0.5,
               repeat: 2,
@@ -56,7 +59,7 @@ const Hero = () => {
             }} href="https://github.com/shakilahamed07" target="blank">
             <FaGithub size={20} className="hover:scale-150 transition-all" />
           </motion.a>
-          <motion.a animate={{ scale: [1, 1.5, 1] }}
+          <motion.a viewport={{ once: true }} whileInView={{ scale: [1, 1.5, 1] }}
             transition={{
               duration: 0.6,
               repeat: 2,
@@ -65,7 +68,7 @@ const Hero = () => {
             }} href="https://www.linkedin.com/in/shakilahmed-me/" target="blank">
             <FaLinkedin size={20} className="hover:scale-150 transition-all" />
           </motion.a>
-          <motion.a animate={{ scale: [1, 1.5, 1] }}
+          <motion.a viewport={{ once: true }} whileInView={{ scale: [1, 1.5, 1] }}
             transition={{
               duration: 0.7,
               repeat: 2,
@@ -74,7 +77,7 @@ const Hero = () => {
             }} href="https://www.facebook.com/shakilahmed.io/" target="blank">
             <FaFacebook size={20} className="hover:scale-150 transition-all" />
           </motion.a>
-          <motion.a animate={{ scale: [1, 1.5, 1] }}
+          <motion.a viewport={{ once: true }} whileInView={{ scale: [1, 1.5, 1] }}
             transition={{
               duration: 0.8,
               repeat: 2,
@@ -86,12 +89,13 @@ const Hero = () => {
               className="hover:scale-150 transition-all"
             />
           </motion.a>
-          <motion.hr initial={{ opacity: 0, x: 100 }}
-          animate={{ opacity: 1, x: 0, transition: { duration: 0.6, delay: 1 } }} className="text-white w-20" />
+          <motion.hr viewport={{ once: true }} initial={{ opacity: 0, x: 80 }}
+          whileInView={{ opacity: 1, x: 0, transition: { duration: 0.7, delay: 0.5 } }} className="text-white w-20" />
         </motion.div>
         <motion.div
-          initial={{ opacity: 0, x: -500 }}
-          animate={{ opacity: 1, x: 0, transition: { duration: 1 } }}
+          viewport={{ once: true }}
+          initial={{ opacity: 0, x: -300 }}
+          whileInView={{ opacity: 1, x: 0, transition: { duration: 1 } }}
           className="space-x-5"
         >
           <a
@@ -121,7 +125,7 @@ const Hero = () => {
         <motion.div
           animate={{ scale: [1, 1.02, 1] }}
           transition={{ duration: 3, repeat: Infinity, ease: easeInOut }}
-          className="max-w-[400px] mx-auto bg-primary rounded-full shadow-2xl shadow-primary"
+          className="max-w-100 mx-auto bg-primary rounded-full shadow-2xl shadow-primary"
         >
           <img className="rounded-full pt-10" src={myImg} alt="" />
         </motion.div>

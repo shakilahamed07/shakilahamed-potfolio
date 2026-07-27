@@ -40,7 +40,7 @@ const Skills = () => {
 
   return (
     <div  id="skills" className="pt-20 max-w-[1350px] mx-auto text-white">
-      <motion.h2 initial={{ opacity: 0 }}
+      <motion.h2 viewport={{ once: true }} initial={{ opacity: 0 }}
           whileInView={{ opacity: 1, transition: { duration: 0.8, delay: 0.3 } }} className="text-3xl font-medium mb-6 text-center">
         My Skills
       </motion.h2>

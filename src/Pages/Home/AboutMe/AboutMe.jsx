@@ -12,8 +12,8 @@ const AboutMe = () => {
     triggerOnce: true,
   });
 
-  const StatCard = ({ end, text, Icon }) => (
-    <div className="min-h-35 rounded-xl border-2 border-primary group hover:scale-102 transition-transform duration-300 p-6 flex flex-col items-center gap-3">
+  const StatCard = ({ end, text,Icon}) => (
+    <div className=" min-h-35 rounded-xl border-2 border-primary group hover:scale-102 transition-transform duration-300 p-6 flex flex-col items-center gap-3">
       <h3 className="text-4xl font-extrabold text-primary transition-transform duration-300 group-hover:scale-110 sm:flex gap-3 mt-2 space-y-3 sm:space-y-0">
       <Icon className="hidden sm:block" /> {inView && <CountUp end={end} duration={3} />}+
       </h3>
@@ -28,14 +28,14 @@ const AboutMe = () => {
       ref={ref}
     >
       {/* Title */}
-      <motion.h2 initial={{ opacity: 0, y: 80 }}
+      <motion.h2 viewport={{ once: true }} initial={{ opacity: 0, y: 80 }}
           whileInView={{ opacity: 1, y: 0, transition: { duration: 0.6 } }} className="text-3xl font-medium mb-6 text-center">
         <span className="">About</span> Me
       </motion.h2>
 
       <div className="">
         {/* Left Content */}
-        <motion.div initial={{ opacity: 0, y: 80 }}
+        <motion.div viewport={{ once: true }} initial={{ opacity: 0, y: 80 }}
           whileInView={{ opacity: 1, y: 0, transition: { duration: 0.6 , delay: 0.1 } }} className="mb-10">
           <p className="mb-10 text-gray-100 text-center text-sm sm:text-lg max-w-5xl mx-auto">
             I’m Shakil Ahamed, a dedicated Full-Stack Web Developer with
@@ -47,20 +47,20 @@ const AboutMe = () => {
 
         {/* Right Stats */}
         <div className="grid md:grid-cols-4 grid-cols-2 gap-6 max-w-5xl mx-auto">
-          <motion.span initial={{ opacity: 0, y: 200 }}
-          whileInView={{ opacity: 1, y: 0, transition: { duration: 0.5, ease: easeInOut } }}>
+          <motion.span viewport={{ once: true }}  initial={{ opacity: 0, y: 100 }}
+          whileInView={{ opacity: 1, y: 0, transition: { duration: 0.5, ease: easeInOut, delay: 0.1 } }}>
             <StatCard end={20} text="Issues Solved" Icon={AiOutlineIssuesClose} />
           </motion.span>
-          <motion.span initial={{ opacity: 0, y: 200 }}
-          whileInView={{ opacity: 1, y: 0, transition: { duration: 0.6, ease: easeInOut } }}>
+          <motion.span viewport={{ once: true }} initial={{ opacity: 0, y: 100 }}
+          whileInView={{ opacity: 1, y: 0, transition: { duration: 0.6, ease: easeInOut, delay: 0.2 } }}>
             <StatCard end={8} text="Projects Complete" Icon={FiCheckCircle} />
           </motion.span>
-          <motion.span initial={{ opacity: 0, y: 200 }}
-          whileInView={{ opacity: 1, y: 0, transition: { duration: 0.7, ease: easeInOut } }}>
+          <motion.span viewport={{ once: true }} initial={{ opacity: 0, y: 100 }}
+          whileInView={{ opacity: 1, y: 0, transition: { duration: 0.7, ease: easeInOut, delay: 0.3 } }}>
             <StatCard end={5} text="Happy Clients" Icon={FiUsers} />
           </motion.span>
-          <motion.span initial={{ opacity: 0, y: 200 }}
-          whileInView={{ opacity: 1, y: 0, transition: { duration: 0.8, ease: easeInOut } }}>
+          <motion.span viewport={{ once: true }} initial={{ opacity: 0, y: 100 }}
+          whileInView={{ opacity: 1, y: 0, transition: { duration: 0.8, ease: easeInOut, delay: 0.4 } }}>
             <StatCard end={2} text="Awards Won" Icon={FiAward} />
           </motion.span>
         </div>

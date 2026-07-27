@@ -4,6 +4,7 @@ import { toast, ToastContainer } from "react-toastify";
 import axios from "axios";
 import { FaLocationDot, FaPhone } from "react-icons/fa6";
 import { MdMarkEmailUnread } from "react-icons/md";
+import { easeInOut, motion } from "motion/react";
 
 const ContactUs = () => {
   const [loader, setLoader] = useState(false);
@@ -36,23 +37,33 @@ const ContactUs = () => {
 
   return (
     <div id="contactUs" className="rounded-xl pt-20 mx-5">
-      <h2  className="text-3xl font-medium text-center">Contact Us</h2>
+      <motion.h2
+      viewport={{ once: true }}
+        initial={{ opacity: 0, scale: 0.5 }}
+        whileInView={{ opacity: 1, scale: 1, transition: { duration: 0.8, delay: 0.3 } }}
+        className="text-3xl font-medium text-center"
+      >
+        Contact Us
+      </motion.h2>
       <ToastContainer position="bottom-right" />
       <div className="md:flex max-w-6xl mx-auto overflow-hidden my-10 space-y-8 md:space-y-8 justify-center gap-5">
         {/* Left side - Icon & Text */}
         <div  className="md:w-1/2 max-w-md mx-auto">
-          <h1 className="sm:text-2xl text-xl font-medium">
+          <motion.h1 viewport={{ once: true }} initial={{ opacity: 0, x: -300 }}
+          whileInView={{ opacity: 1, x: 0, transition: { duration: 0.6, delay: 0.1 } }} className="sm:text-2xl text-xl font-medium">
             Let's talk about your <br />{" "}
             <span className="bg-linear-to-r from-primary to-[#81c41cd0] bg-clip-text text-transparent font-semibold">
               next idea
             </span>
-          </h1>
-          <p className="mb-10 mt-5 text-[#c9c9c9d8] max-w-md">
+          </motion.h1>
+          <motion.p viewport={{ once: true }} initial={{ opacity: 0, x: -300 }}
+          whileInView={{ opacity: 1, x: 0, transition: { duration: 0.6, delay: 0.2 } }} className="mb-10 mt-5 text-[#c9c9c9d8] max-w-md">
             Whether you have a question, project idea, or want to contact - I'm
             always open ti meaningful conversation.
-          </p>
+          </motion.p>
           <div className="space-y-5">
-            <div className="flex items-center gap-4">
+            <motion.div viewport={{ once: true }} initial={{ opacity: 0, x: -300 }}
+            whileInView={{ opacity: 1, x: 0, transition: { duration: 0.6, delay: 0.2 } }} className="flex items-center gap-4">
               <div className="bg-primary p-2 rounded-full w-fit">
                 <FaLocationDot size={20} />
               </div>
@@ -60,8 +71,9 @@ const ContactUs = () => {
                 <p className="text-sm text-[#c9c9c9d8]">Location</p>
                 <h2 className="font-medium">Dhaka, Bangladesh</h2>
               </div>
-            </div>
-            <div className="flex items-center gap-4">
+            </motion.div>
+            <motion.div viewport={{ once: true }} initial={{ opacity: 0, x: -300 }}
+            whileInView={{ opacity: 1, x: 0, transition: { duration: 0.6, delay: 0.2 } }} className="flex items-center gap-4">
               <div className="bg-primary p-2 rounded-full w-fit">
                 <FaPhone size={20} />
               </div>
@@ -76,8 +88,9 @@ const ContactUs = () => {
                   +880 1772 551 376
                 </a>
               </div>
-            </div>
-            <div className="flex items-center gap-4">
+            </motion.div>
+            <motion.div viewport={{ once: true }} initial={{ opacity: 0, x: -300 }}
+            whileInView={{ opacity: 1, x: 0, transition: { duration: 0.6, delay: 0.2 } }} className="flex items-center gap-4">
               <div className="bg-primary p-2 rounded-full w-fit">
                 <MdMarkEmailUnread size={20} />
               </div>
@@ -90,15 +103,17 @@ const ContactUs = () => {
                   shakilahmed.codes@gmail.com
                 </a>
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
 
         {/* Right side - Form */}
-        <div  className="md:w-1/2 max-w-md mx-auto sm:p-8 p-4 bg-[#33333368] rounded-2xl ">
+        <motion.div viewport={{ once: true }} initial={{ opacity: 0, x: 300 }}
+          whileInView={{ opacity: 1, x: 0, transition: { duration: 0.6, delay: 0.2 } }} className="md:w-1/2 max-w-md mx-auto sm:p-8 p-4 bg-[#33333368] rounded-2xl ">
           <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
             <div className="sm:flex gap-4 space-y-4 sm:space-y-0">
-              <div className="sm:w-1/2">
+              <motion.div viewport={{ once: true }} initial={{ opacity: 0, scale: 0.6}}
+                whileInView={{ opacity: 1, scale: 1, transition: { duration: 0.7, delay: 0.1 } }} className="sm:w-1/2">
                 <input
                   type="text"
                   placeholder="Enter your name"
@@ -110,9 +125,10 @@ const ContactUs = () => {
                     {errors.name.message}
                   </p>
                 )}
-              </div>
+              </motion.div>
 
-              <div className="sm:w-1/2">
+              <motion.div viewport={{ once: true }} initial={{ opacity: 0, scale: 0.6}}
+                whileInView={{ opacity: 1, scale: 1, transition: { duration: 0.7, delay: 0.1 } }} className="sm:w-1/2">
                 <input
                   type="text"
                   placeholder="Enter your number"
@@ -126,10 +142,11 @@ const ContactUs = () => {
                     {errors.phone.message}
                   </p>
                 )}
-              </div>
+              </motion.div>
             </div>
 
-            <div>
+            <motion.div viewport={{ once: true }} initial={{ opacity: 0, scale: 0.6}}
+                whileInView={{ opacity: 1, scale: 1, transition: { duration: 0.7, delay: 0.1 } }}>
               <input
                 type="email"
                 placeholder="Enter your email"
@@ -147,9 +164,10 @@ const ContactUs = () => {
                   {errors.email.message}
                 </p>
               )}
-            </div>
+            </motion.div>
 
-            <div>
+            <motion.div viewport={{ once: true }} initial={{ opacity: 0, scale: 0.6}}
+                whileInView={{ opacity: 1, scale: 1, transition: { duration: 0.7, delay: 0.1 } }}>
               <textarea
                 rows="4"
                 placeholder="Message.."
@@ -161,16 +179,17 @@ const ContactUs = () => {
                   {errors.message.message}
                 </p>
               )}
-            </div>
+            </motion.div>
 
-            <button
+            <motion.button viewport={{ once: true }} initial={{ opacity: 0, scale: 0.7}}
+                whileInView={{ opacity: 1, scale: 1, transition: { duration: 0.6, delay: 0.1, ease: easeInOut } }}
               type="submit"
               className="w-full bg-primary text-white py-3 rounded-xl transition font-medium"
             >
               {loader ? "Sending.." : "SEND MESSAGE"}
-            </button>
+            </motion.button>
           </form>
-        </div>
+        </motion.div>
       </div>
     </div>
   );
